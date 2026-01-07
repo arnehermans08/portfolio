@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,400&display=swap');
+@import url('https://www.w3schools.com/w3css/5/w3.css');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+    /**/
+    font-size: 80%;
+    font-family: 'Arial', sans-serif;
+}
+
+
+li {
+    /**/
+    list-style: none;
+}
+
+a {
+    /**/
+    text-decoration: none;
+}
+
+.header-container {
+    /**/
+    display: grid;
+    grid-template-columns: 80px 150px auto;
+    gap: 5px;
+    background-color: rgb(135, 135, 135);
+    padding: 0px;
+    align-items: center;
+}
+
+.navbar {
+    /**/
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    padding: 1rem 1.5rem;
+    color: gray;
+}
+
+.logo {
+    /**/
+    padding-left: 5px;
+    align-items: center;
+    justify-content: center;
+}
+
+.logoname {
+    /**/
+    font-size: 20px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    margin: 10px;
+    justify-content: center;
+}
+
+
+.hamburger {
+    /**/
+    display: none;
+}
+
+.bar {
+    /**/
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #101010;
+}
+
+.nav-menu {
+    /**/
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+.nav-item {
+    /**/
+    margin-left: 10px;
+}
+
+.nav-link {
+    /**/
+    font-weight: 400;
+    color: #475569;
+    background-color: #b7b7b7;
+    border: none;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.nav-link:hover {
+    /**/
+    color: #003a4f;
+}
+
+
+.begroeting{
+    text-align: center;
+    padding-top: 100px;
+    font-size: 30px;
+
+}
+
+
+.column {
+    /**/
+    float: left;
+    width: 50%;
+    padding: 15px;
+}
+
+.footer {
+    /**/
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    background: #ddd;
+    margin-top: 20px;
+}
+
+.row::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.leftcolumn {
+    float: left;
+    width: 100%;
+}
+
+#skills{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 500px;
+
+.card {
+    background-color: #ddd;
+    margin: 2%;
+    padding: 15px;
+    border: 2px;
+    border-color: black;
+    width: 42%;
+    border-radius: 10px;
+}
+}
+
+
+.skill-naam{
+    font-size: 20px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+    text-decoration: underline;
+}
+
+
+.contact-grid {
+    display: flex;
+    gap: 20px;
+    background-color: rgb(198, 198, 198);
+    padding: 20px;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 50px;
+}
+
+.witruimte{
+    padding: 20px;
+}
+
+.contact-grid>div {
+    width: 300px;
+    height: 200px;
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    border-radius: 50px;
+}
+
+
+
+
+@media only screen and (max-width: 830px) {
+
+    /**/
+    .nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 84px;
+        flex-direction: column;
+        background-color: #999999;
+        margin-top: 10px;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+        box-shadow:0 10px 27px rgba(0, 0, 0, 0.05);
+    }
+
+    .nav-menu.active {
+        left: 0;
+    }
+
+    .nav-item {
+        margin: 5px 0;
+    }
+
+    .hamburger {
+        display: block;
+        cursor: pointer;
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        -webkit-transform: translateY(8px) rotate(45deg);
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        -webkit-transform: translateY(-8px) rotate(-45deg);
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .column {
+        width: 100%;
+    }
+
+    .witruimte{
+        padding: 20%;
+        padding-top: 10%;
+    }
+
+    .contact-grid{
+        flex-direction: column;
+    }
+
+    .email{
+    
+    }
+}
+
+@media only screen and (max-width: 600px) {
+
+    .email{
+        
+    }
+}
