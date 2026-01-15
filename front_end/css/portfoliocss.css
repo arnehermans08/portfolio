@@ -149,7 +149,8 @@ a {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    margin-top: 500px;
+    margin-top: 50px;
+}
 
 .card {
     background-color: #ddd;
@@ -160,7 +161,7 @@ a {
     width: 42%;
     border-radius: 10px;
 }
-}
+
 
 
 .skill-naam{
@@ -251,14 +252,10 @@ a {
         flex-direction: column;
     }
 
-    .email{
-    
-    }
+
 }
 
 @media only screen and (max-width: 600px) {
 
-    .email{
-        
-    }
+
 }
